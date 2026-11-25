@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive activity for sorting web accessibility practices into the four POUR principles.">
+    <title>Understanding Web Accessibility: The POUR Principles</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="page-shell">
+        <div class="top-bar">
+            <a class="back-link" href="https://cole-gomez-design.github.io/portfolio/">
+                <span aria-hidden="true">←</span> Back to Portfolio
+            </a>
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                aria-pressed="false">
+                <span class="theme-icon" aria-hidden="true">☾</span>
+            </button>
+        </div>
+
+        <header class="page-header">
+            <img
+                src="images/black_monitor_logo.png"
+                data-light-logo="images/black_monitor_logo.png"
+                data-dark-logo="images/white_monitor_logo.png"
+                alt="Multimedia Design logo"
+                id="activity-logo">
+            <div class="page-heading">
+                <h1>The POUR Principles: <br />Understanding Web Accessibility</h1>
+                <p>Sort common web accessibility practices into the four POUR principles.</p>
+            </div>
+        </header>
+
+        <main id="main-content" tabindex="-1">
+            <section class="activity-card" aria-labelledby="activity-title">
+                <div class="workspace">
+                    <section class="sorting-section" aria-labelledby="sorting-heading">
+                        <div class="section-heading">
+                            <h2 id="sorting-heading">POUR Categories</h2>
+                        </div>
+
+                        <div class="category-grid">
+                            <section class="category" aria-labelledby="perceivable-heading">
+                                <div class="category-heading">
+                                    <h3 id="perceivable-heading">Perceivable</h3>
+                                </div>
+                                <p class="category-description" id="perceivable-description">Information and interface elements must be presented in ways users can perceive, regardless of their sensory abilities.</p>
+                                <div class="drop-zone is-empty" id="zone-perceivable" data-category="perceivable" role="group" tabindex="0" aria-label="perceivable drop area" aria-labelledby="perceivable-heading" aria-describedby="perceivable-description">
+                                </div>
+                            </section>
+
+                            <section class="category" aria-labelledby="operable-heading">
+                                <div class="category-heading">
+                                    <h3 id="operable-heading">Operable</h3>
+                                </div>
+                                <p class="category-description" id="operable-description">Interface components and navigation must be usable by everyone, including people who rely on a keyboard or other input methods.</p>
+                                <div class="drop-zone is-empty" id="zone-operable" data-category="operable" role="group" tabindex="0" aria-label="operable drop area" aria-labelledby="operable-heading" aria-describedby="operable-description">
+                                </div>
+                            </section>
+
+                            <section class="category" aria-labelledby="understandable-heading">
+                                <div class="category-heading">
+                                    <h3 id="understandable-heading">Understandable</h3>
+                                </div>
+                                <p class="category-description" id="understandable-description">Information and interface behavior must be clear, predictable, and easy to understand.</p>
+                                <div class="drop-zone is-empty" id="zone-understandable" data-category="understandable" role="group" tabindex="0" aria-label="understandable drop area" aria-labelledby="understandable-heading" aria-describedby="understandable-description">
+                                </div>
+                            </section>
+
+                            <section class="category" aria-labelledby="robust-heading">
+                                <div class="category-heading">
+                                    <h3 id="robust-heading">Robust</h3>
+                                </div>
+                                <p class="category-description" id="robust-description">Content must work reliably with different browsers, devices, and assistive technologies.</p>
+                                <div class="drop-zone is-empty" id="zone-robust" data-category="robust" role="group" tabindex="0" aria-label="robust drop area" aria-labelledby="robust-heading" aria-describedby="robust-description">
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <section class="concept-section" aria-labelledby="concept-heading">
+                        <div class="section-heading">
+                            <h2 id="concept-heading">Accessibility Practices</h2>
+                        </div>
+
+                        <div id="concept-bank" class="concept-bank" aria-label="Accessibility practices to sort">
+                            <button class="concept-item" id="concept-5" draggable="true" data-answer="operable" type="button" aria-pressed="false">
+                                Provide a visible keyboard focus indicator.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-2" draggable="true" data-answer="perceivable" type="button" aria-pressed="false">
+                                Provide captions for videos.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-4" draggable="true" data-answer="operable" type="button" aria-pressed="false">
+                                Make interactive elements keyboard accessible.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-10" draggable="true" data-answer="robust" type="button" aria-pressed="false">
+                                Use semantic HTML elements for intended purposes.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-7" draggable="true" data-answer="understandable" type="button" aria-pressed="false">
+                                Use clear labels for form fields.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-12" draggable="true" data-answer="robust" type="button" aria-pressed="false">
+                                Make interactive elements communicate their state to assistive technologies.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-8" draggable="true" data-answer="understandable" type="button" aria-pressed="false">
+                                Keep navigation simple and consistent.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-1" draggable="true" data-answer="perceivable" type="button" aria-pressed="false">
+                                Add meaningful alt text to informative images.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-9" draggable="true" data-answer="understandable" type="button" aria-pressed="false">
+                                Make errors easy to find and fix.
+                                <span class="answer-status"></span>
+                            </button>
+                             <button class="concept-item" id="concept-3" draggable="true" data-answer="perceivable" type="button" aria-pressed="false">
+                                Ensure text has sufficient contrast against backgrounds.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-11" draggable="true" data-answer="robust" type="button" aria-pressed="false">
+                                Expose custom controls so assistive technologies can detect them.
+                                <span class="answer-status"></span>
+                            </button>
+                            <button class="concept-item" id="concept-6" draggable="true" data-answer="operable" type="button" aria-pressed="false">
+                                Allow users to pause, stop, or hide moving content.
+                                <span class="answer-status"></span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="activity-footer">
+                    <div class="activity-controls">
+                        <button id="check-answers" class="button button-primary" type="button">Check Answers</button>
+                        <button id="reset-activity" class="button button-secondary" type="button">Reset Activity</button>
+                    </div>
+                    <p id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>POUR principles are part of the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer">Web Content Accessibility Guidelines (WCAG)</a>.</p>
+        </footer>
+    </div>
+</body>
+</html>
