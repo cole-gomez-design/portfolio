@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test your knowledge of website accessibility in this seven-question interactive quiz.">
+    <title>Website Accessibility Pop Quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="popsolution.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <div class="page-shell">
+        <div class="top-bar">
+            <a class="back-link" href="https://cole-gomez-design.github.io/portfolio/">
+                <span aria-hidden="true">←</span> Back to Portfolio
+            </a>
+            <button
+                id="theme-toggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                aria-pressed="false">
+                <span class="theme-icon" aria-hidden="true">☾</span>
+            </button>
+        </div>
+
+        <header class="page-header">
+            <img
+                src="images/black_monitor_logo.png"
+                data-light-logo="images/black_monitor_logo.png"
+                data-dark-logo="images/white_monitor_logo.png"
+                alt="Multimedia Design logo"
+                id="quiz-logo">
+            <div class="page-heading">
+                <h1>Website Accessibility Quiz</h1>
+                <p>Test your knowledge of foundational website accessibility practices.</p>
+            </div>
+        </header>
+
+        <main id="main-content" tabindex="-1">
+            <section class="quiz-card" id="quiz-card" aria-labelledby="quiz-section-title">
+                <h2 id="quiz-section-title" class="visually-hidden">Accessibility quiz questions</h2>
+
+                <div class="progress-area">
+                    <p id="progress-text">Question 1 of 7</p>
+                    <progress id="progress-bar" max="7" value="1" aria-label="Quiz progress"></progress>
+                </div>
+
+                <form id="quiz-form">
+                    <fieldset aria-describedby="answer-instructions">
+                        <legend id="question-text" tabindex="-1"></legend>
+                        <p class="answer-instructions" id="answer-instructions">Choose one answer.</p>
+                        <div class="answer-options" id="answer-options"></div>
+                    </fieldset>
+
+                    <p class="feedback" id="feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+
+                    <div class="quiz-controls">
+                        <button class="button button-secondary" id="previous-button" type="button" disabled>Previous</button>
+                        <button class="button button-primary" id="next-button" type="button" disabled>Next question</button>
+                    </div>
+                </form>
+
+                <div class="quiz-utility">
+                    <button class="text-button" id="restart-button" type="button">Start over</button>
+                </div>
+            </section>
+
+            <section class="quiz-card results-card" id="results-card" aria-labelledby="results-heading" hidden>
+                <div class="results-mark" aria-hidden="true">✓</div>
+                <h2 id="results-heading" tabindex="-1">Quiz complete!</h2>
+                <p class="results-score" id="results-score"></p>
+                <p id="results-message"></p>
+                <button class="button button-primary" id="play-again-button" type="button">Try again</button>
+            </section>
+        </main>
+
+    </div>
+</body>
+</html>
