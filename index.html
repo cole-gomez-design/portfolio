@@ -1,20 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-Name       : Vestibule 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20130406
--->
-
-<!-- Comments are in ALL CAPS -->
-
-
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta name="keywords" content="" />
 	<meta name="description" content="Cole Gomez's e-portfolio showcasing educational technology projects, web design, and multimedia development." />
@@ -28,49 +13,73 @@ Released   : 20130406
 <body>
 	<a href="#main-content" class="skip-link">Skip to main content</a>
 <div id="wrapper">
-<!-- START OF THE NAVIGATION SECTION.  DO NOT CHANGE ANYTHING ABOVE THIS LINE EXCEPT TO SET THE TITLE. -->
+<!-- START OF THE NAVIGATION SECTION. -->
  
-	<div id="menu-wrapper" role="navigation" aria-label="Main navigation">
+	<nav id="menu-wrapper" aria-label="Main navigation">
 		<div id="menu" class="container">
 			<div id="site-brand">
-            	<a href="index.html">Cole Gomez</a>
-        	</div>
-			<ul>
-				<!-- NAVIGATION MENU.  THERE SHOULD BE ONE LIST ITEM FOR EACH BUTTON IN YOUR NAVIGATION BAR. -->
-                <!-- REPLACE THE # IN THE LINK WITH THE FILE NAME OF THE APPROPRIATE PAGE.  -->
-                <li class="current_page_item"><a href="#about" aria-current="page">About</a></li>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#interests">Interests</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<a href="index.html">Cole Gomez</a>
+			</div>
+
+			<div id="nav-controls">
+				<ul id="primary-navigation">
+					<li>
+						<a class="nav-link" href="index.html" aria-current="page">Home</a>
+					</li>
+
+					<li class="nav-item has-dropdown">
+						<div class="nav-link-group">
+							<a class="nav-link" href="professional-work.html">Professional Work</a>
+							<button class="dropdown-toggle" type="button"
+								aria-label="Show Professional Work project links" data-menu-label="Professional Work project links"
+								aria-expanded="false" aria-controls="professional-work-menu">
+								<span class="dropdown-chevron" aria-hidden="true"></span>
+							</button>
+						</div>
+						<ul class="dropdown-menu" id="professional-work-menu" hidden="hidden">
+							<li><a href="https://qpsi.med.ufl.edu/">QPSi Website</a></li>
+							<li><a href="https://knowledge.qpsi.med.ufl.edu/">QPSi Knowledgebase</a></li>
+							<li><a href="https://ore.ufl.edu/">UF Office of Real Estate</a></li>
+							<li><a href="https://conneqtor.ese.ufhealth.org/landing">ConneQtor QMS</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item has-dropdown">
+						<div class="nav-link-group">
+							<a class="nav-link" href="academic-projects.html">Academic Projects</a>
+							<button class="dropdown-toggle" type="button"
+								aria-label="Show Academic Projects" data-menu-label="Academic Projects"
+								aria-expanded="false" aria-controls="academic-projects-menu">
+								<span class="dropdown-chevron" aria-hidden="true"></span>
+							</button>
+						</div>
+						<ul class="dropdown-menu" id="academic-projects-menu" hidden="hidden">
+							<li><a href="projects/crafting-visuals.html">Crafting Visuals</a></li>
+							<li><a href="projects/website-accessibility-quiz.html">Website Accessibility Quiz</a></li>
+							<li><a href="projects/pour-drag-and-drop.html">POUR Drag-and-Drop Activity</a></li>
+							<li><a href="projects/e-portfolio-template.html">E-Portfolio Template</a></li>
+							<li><a href="projects/educational-video.html">Educational Video</a></li>
+							<li><a href="projects/digital-animation.html">Digital Animation</a></li>
+							<li><a href="projects/screencast.html">Screencast</a></li>
+						</ul>
+					</li>
+				</ul>
+
 				<button id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-					☾
+					<span aria-hidden="true">☾</span>
 				</button>
-			</ul>
-			<!-- <div id="site-search">
-				<form action="search.html" method="get" role="search">
-
-					<label for="search-input">Search</label>
-
-					<input type="text" id="search-input"
-						name="q" placeholder="Search..." />
-
-					<input type="submit" value="Go" />
-
-				</form>
-        	</div> -->
+			</div>
 		</div>
-	</div>
+	</nav>
 
 <!-- END OF THE NAVIGATION SECTION. -->
 
+<main id="main-content" tabindex="-1">
 <!-- START OF THE CONTENT SECTION. -->
 	
 <!-- PROFILE SECTION: PHOTO, NAME, TITLE, ABOUT ME, DOWNLOAD CV BUTTON -->
 
 	<div id="profile" class="container">
-		<a name="main-content" id="main-content"></a>
-
 		<div id="profile-sidebar">
 			<div id="profile-photo">
 				<img src="images/cole_profile_photo.jpg" alt="Portrait of Cole Gomez" />
@@ -85,7 +94,7 @@ Released   : 20130406
 		<div id="about" class="entry">
 			<h2>About Me</h2>
 			<p>
-				I'm a web designer and digital experience specialist with a background in higher education, educational technology, and digital content development. My work focuses on creating accessible, user-friendly websites and digital platforms that make information easier to navigate and use.
+				I'm a web designer and user experience specialist with a background in higher education, educational technology, and digital content development. My work focuses on creating accessible, user-friendly websites and digital platforms that make information easier to navigate and use.
 				I've worked on website design, development, and UX improvements across the University of Florida, including projects for the College of Medicine and Office of Real Estate. I'm particularly interested in the intersection of web design, user experience, and educational technology, and how thoughtful digital design can improve access to information and learning.
 			</p>
 			<a href="files/cole_gomez_resume_2026.pdf" class="button">Download CV</a>
@@ -135,7 +144,7 @@ Released   : 20130406
 					<h3>Personal</h3>
 					<ul>
 						<li>Drawing and Digital Art</li>
-						<li>Sewing andTextile Crafts</li>
+						<li>Sewing and Textile Crafts</li>
 						<li>Science Fiction and Fantasy</li>
 						<li>Hiking and Gardening</li>
 						<li>Scuba Diving and Kayaking</li>
@@ -156,6 +165,7 @@ Released   : 20130406
 
 		<div id="project-grid">
 
+			<!-- QPSI WEBSITE -->
 			<div class="project-card">
 				<!-- <a href="#" target="_blank" rel="noopener noreferrer">
 					<img src="images/qpsi-website.jpg" alt="QPSi website homepage screenshot" />
@@ -170,6 +180,7 @@ Released   : 20130406
 				<a href="https://qpsi.med.ufl.edu/" target="_blank" rel="noopener noreferrer">Visit the QPSi Website</a>
 			</div>
 
+			<!-- QPSI KNOWLEDGEBASE WEBSITE -->
 			<div class="project-card">
 				<!-- <a href="#" target="_blank" rel="noopener noreferrer">
 					<img src="images/qpsi-knowledgebase.jpg" alt="QPSi Knowledgebase homepage screenshot" />
@@ -184,6 +195,7 @@ Released   : 20130406
 				<a href="https://knowledge.qpsi.med.ufl.edu/" target="_blank" rel="noopener noreferrer">Visit the QPSi Knowledgebase Website</a>
 			</div>
 
+			<!-- UF Office of Real Estate Website -->
 			<div class="project-card">
 				<!-- <a href="#" target="_blank" rel="noopener noreferrer">
 					<img src="images/ore-website.jpg" alt="UF Office of Real Estate website screenshot" />
@@ -195,9 +207,10 @@ Released   : 20130406
 				<p>
 					I managed the website's WordPress development and administration, including its migration from Terminalfour, content updates, SEO improvements, and analytics-informed changes that increased website traffic by 240%.
 				</p>
-				<a href="https://ore.ufl.edu/" target="_blank" rel="noopener noreferrer">Visit the UF Office of Real Estate Website</a>
+				<a href="#" target="_blank" rel="noopener noreferrer">Visit the UF Office of Real Estate Website</a>
 			</div>
 
+			<!-- CONNEQTOR QMS WEBSITE -->
 			<div class="project-card">
 				<!-- <a href="#" target="_blank" rel="noopener noreferrer">
 					<img src="images/conneqtor.jpg" alt="ConneQtor QMS platform screenshot" />
@@ -224,7 +237,7 @@ Released   : 20130406
 					traditional photo-composite book cover in Photoshop, then used
 					Adobe Firefly to generate an alternative cover for comparison.
 				</p>
-				<a href="/files/project_1_crafting_visuals.pdf" target="_blank" rel="noopener noreferrer">View Project Documentation</a>
+				<a href="projects/crafting-visuals.html" target="_blank" rel="noopener noreferrer">View the Crafting Visuals Project Page</a>
 			</div>
 
 			<!-- Project 2: Interactive Quiz -->
@@ -232,14 +245,15 @@ Released   : 20130406
 				<!-- <a href="#" target="_blank" rel="noopener noreferrer">
 					<img src="images/accessibility-quiz.jpg" alt="Website accessibility quiz screenshot" />
 				</a> -->
-				<h3>Website Accessibility Quiz</h3>
+				<h3>Web Accessibility Quiz</h3>
 				<p>
 					An interactive quiz introducing key concepts in website accessibility, including accessibility standards and practices for creating more inclusive digital experiences.
 				</p>
 				<p>
 					I designed and developed the quiz using HTML, CSS, and JavaScript as part of my educational technology coursework. The project demonstrates accessible web design and interactive learning development.
 				</p>
-				<a href="https://cole-gomez-design.github.io/website-accessibility-quiz/" target="_blank" rel="noopener noreferrer">View Project</a>
+				<p><a href="https://cole-gomez-design.github.io/website-accessibility-quiz/" target="_blank" rel="noopener noreferrer">Open the Web Accessibility Quiz</a></p>
+				<a href="projects/website-accessibility-quiz.html" target="_blank" rel="noopener noreferrer">View the Web Accessibility Quiz Project Page</a>
 			</div>
 
 			<!-- Project 3: Drag and Drop -->
@@ -255,9 +269,9 @@ Released   : 20130406
 					I designed and developed the activity using HTML, CSS, and JavaScript as part of my educational technology coursework, creating an interactive way for learners to practice identifying accessibility principles.
 				</p>
 				<p>
-					<a href="https://cole-gomez-design.github.io/ai-drag-and-drop-quiz/" target="_blank" rel="noopener noreferrer">AI-Generated Version</a>
+					<a href="https://cole-gomez-design.github.io/drag-and-drop-quiz/" target="_blank" rel="noopener noreferrer">Open the Drag and Drop Activity</a>
 				</p>
-				<a href="https://cole-gomez-design.github.io/drag-and-drop-quiz/" target="_blank" rel="noopener noreferrer">My Version</a>
+				<a href="projects/drag-and-drop-quiz.html" target="_blank" rel="noopener noreferrer">View the Drag-and-Drop Activity Project Page</a>
 			</div>
 
 			 <!-- Project 4: E-Portfolio Template -->
@@ -274,11 +288,7 @@ Released   : 20130406
 					accessibility features. I also generated alternative versions
 					using ChatGPT and Claude.
 				</p>
-				<p>
-				<a href="https://cole-gomez-design.github.io/ai-portfolio/" target="_blank" rel="noopener noreferrer">ChatGPT Version</a> <br />
-				<a href="https://cole-gomez-design.github.io/claude-portfolio/" target="_blank" rel="noopener noreferrer">Claude Version</a>
-				</p>
-				<a href="https://cole-gomez-design.github.io/portfolio/" target="_blank" rel="noopener noreferrer">My Version</a>
+				<a href="https://cole-gomez-design.github.io/portfolio/" target="_blank" rel="noopener noreferrer">View the E-Portfolio Project Page</a>
 			</div>
 
 			    <!-- Project 5: Educational Video -->
@@ -296,9 +306,9 @@ Released   : 20130406
 					using Artlist.
 				</p>
 				<p>
-					<a href="https://youtu.be/2e13upVujCw" target="_blank" rel="noopener noreferrer">AI-Generated Video</a>
+					<a href="https://youtu.be/xSBxtjQohmg" target="_blank" rel="noopener noreferrer">Watch the Educational Video</a>
 				</p>
-				<a href="https://youtu.be/xSBxtjQohmg" target="_blank" rel="noopener noreferrer">My Video</a>
+				<a href="projects/educational-video.html" target="_blank" rel="noopener noreferrer">View the Educational Video Projects Page</a>
 			</div>
 
 			<!-- Project 6: Digital Animation -->
@@ -314,23 +324,25 @@ Released   : 20130406
 					animation in Clipchamp to add narration, music, a title card,
 					and additional visual adjustments.
 				</p>
-				<a href="https://youtu.be/x7XEpPc7ybM" target="_blank" rel="noopener noreferrer">View Animation</a>
+				<p><a href="https://youtu.be/x7XEpPc7ybM" target="_blank" rel="noopener noreferrer">Watch the Digital Animation</a></p>
+				<a href="projects/digital-animation.html" target="_blank" rel="noopener noreferrer">View the Digital Animation Projects Page</a>
 			</div>
 
-			<!-- Project 7: Screencast (comment out until completed)
+			<!-- Project 7: Screencast -->
 			<div class="project-card">
-				<h3>Software Demonstration Screencast</h3>
+				<h3>Screencast</h3>
 				<p>
-					This project involves creating a narrated screencast demonstrating
-					a software application and its features.
+					This project involved creating a narrated screencast demonstrating
+					a how to make a composite image using layer masks in Adobe Photoshop.
 				</p>
 				<p>
-					I will develop an instructional outline and record a demonstration
-					incorporating narration, screen captures, and visual effects.
+					I recorded teh screencast using windows snipping tool, recorded the narration in Audacity, and then added them to Clipchamp for editing and final production.
+					Final production included adding a title card, transitions, background music, and visual pointers to highlight the layer mask process.
 				</p>
-				<a href="#">View Screencast</a>
+				<p><a href="https://www.youtube.com/watch?v=vKr_N-EFYhc" target="_blank" rel="noopener noreferrer">Watch the Screencast</a></p>
+				<a href="projects/screencast.html" target="_blank" rel="noopener noreferrer">View the Screencast Project Page</a>
 			</div>
-			-->
+			
 
 			<!-- Project 8: AI Screencast Guide (comment out until completed)
 			<div class="project-card">
@@ -357,110 +369,23 @@ Released   : 20130406
 <!-- CONTACT SECTION: CONTACT INFORMATION AND EMAIL LINK -->
 
 	<div id="contact" class="container">
-
-    <h2>Contact</h2>
-
-    <p>Have a question or want to get in touch? Send me an email.</p>
-
-    <a href="mailto:cole.gomez@outlook.com" class="button">
-        Email Me
-    </a>
-
-</div>
-
-<!-- ON OTHER PAGES, LIKE THE PROJECT PAGES, YOU WILL TAKE OUT EVERYTHING BETWEEN HERE AND THE END OF THE CONTENT SECTION AND REPLACE IT WITH THE PROJECT CONTENT. -->
-    
-    
-    
-    
-	<!-- <div id="three-column" class="container">
-		<div class="tbox1">
-			<div class="box-style">
-				<div class="content">
-					
-					<h2>Image Editing</h2>
-					<p>Briefly explain what you've done for your Project 1 in this class. Provide about the same amount of text in each box so they appear uniform in size.</p>
-					<a href="image.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox2">
-			<div class="box-style">
-				<div class="content">
-					<h2>Web Design</h2>
-					<p>Briefly explain what you've done for your Projects 2 and 3 in this class. Provide about the same amount of text in each box so they appear uniform in size.</p>
-					<a href="web.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox3">
-			<div class="box-style">
-				<div class="content">
-					<h2>Video Production</h2>
-					<p>Briefly explain what you've done for your Project 5 in this class. Provide about the same amount of text in each box so they appear uniform in size.</p>
-					<a href="video.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
+    	<h2>Contact</h2>
+    		<p>Have a question or want to get in touch? Send me an email.</p>
+    		<a href="mailto:cole.gomez@outlook.com" class="button">Email Me</a>
 	</div>
-	<div id="three-column" class="container">
-		<div class="tbox1">
-			<div class="box-style">
-				<div class="content">
-					<h2>Digital Animation</h2>
-					<p>Briefly explain what you've done for your Project 6 in this class. Provide about the same amount of text in each box so they appear uniform in size.</p>
-					<a href="animation.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox2">
-			<div class="box-style">
-				<div class="content">
-					<h2>Screencasting</h2>
-					<p>Briefly explain what you've done for your Project 8 in this class. Provide about the same amount of text in each box so they appear uniform in size.</p>
-					<a href="screencast.html" class="button">Learn More</a>
-				</div>
-			</div>
-		</div>
-		<div class="tbox3">
-			<div class="box-style">
-				<div class="content">
-					<h2>E-Portfolio</h2>
-					<p>Explain that this e-portfolio is a reflection of your web design skills. Alternatively, if you developed a mobile app for this class, you can change this block to Mobile App and focus on that project. You can add the "Learn More" link here then as well by copying and pasting from above.</p>
-				
-				</div>
-			</div>
-		</div>
-	</div>	
-     -->
-    
-    
-    
-    
+
+</main>
+
 <!-- END OF THE CONTENT SECTION.  BELOW YOU CAN CUSTOMIZE YOUR FOOTER. -->
 </div>
 
-<div id="footer">
+<footer id="footer">
 	<!-- START FOOTER -->
 	<p>&copy; 2026 Cole Gomez. All rights reserved.</p>
     <a href="#main-content">Back to top</a>
 	<!-- END FOOTER -->
-</div>
+</footer>
 
-<script type="text/javascript">
-    var themeToggle = document.getElementById("theme-toggle");
-
-    themeToggle.addEventListener("click", function() {
-        var darkMode = document.body.classList.toggle("dark-mode");
-
-        themeToggle.setAttribute("aria-pressed", darkMode);
-        themeToggle.setAttribute(
-            "aria-label",
-            darkMode ? "Switch to light mode" : "Switch to dark mode"
-        );
-        themeToggle.textContent = darkMode ? "☀" : "☾";
-    });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
