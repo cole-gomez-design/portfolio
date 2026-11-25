@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An interactive sorting activity introducing the four WCAG POUR accessibility principles, with traditionally developed, AI-generated, and redesigned versions." />
+    <title>POUR Drag-and-Drop Activity | Cole Gomez</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" type="text/css" />
+    <link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div id="wrapper">
+        <nav id="menu-wrapper" aria-label="Main navigation">
+            <div id="menu" class="container">
+                <div id="site-brand">
+                    <a href="../index.html">Cole Gomez</a>
+                </div>
+
+                <div id="nav-controls">
+                    <ul id="primary-navigation">
+                        <li><a class="nav-link" href="../index.html">Home</a></li>
+
+                        <li class="nav-item has-dropdown">
+                            <div class="nav-link-group">
+                                <a class="nav-link" href="../professional-work.html">Professional Work</a>
+                                <button class="dropdown-toggle" type="button"
+                                    aria-label="Show Professional Work project links"
+                                    data-menu-label="Professional Work project links"
+                                    aria-expanded="false" aria-controls="professional-work-menu">
+                                    <span class="dropdown-chevron" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <ul class="dropdown-menu" id="professional-work-menu" hidden="hidden">
+                                <li><a href="qpsi-website.html">QPSi Website</a></li>
+                                <li><a href="qpsi-knowledgebase.html">QPSi Knowledgebase</a></li>
+                                <li><a href="uf-office-of-real-estate.html">UF Office of Real Estate</a></li>
+                                <li><a href="conneqtor-qms.html">ConneQtor QMS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+                            <div class="nav-link-group">
+                                <a class="nav-link" href="../academic-projects.html">Academic Projects</a>
+                                <button class="dropdown-toggle" type="button"
+                                    aria-label="Show Academic Projects project links"
+                                    data-menu-label="Academic Projects project links"
+                                    aria-expanded="false" aria-controls="academic-projects-menu">
+                                    <span class="dropdown-chevron" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <ul class="dropdown-menu" id="academic-projects-menu" hidden="hidden">
+                                <li><a href="crafting-visuals.html">Crafting Visuals</a></li>
+                                <li><a href="website-accessibility-quiz.html">Website Accessibility Quiz</a></li>
+                                <li><a href="pour-drag-and-drop.html" aria-current="page">POUR Drag-and-Drop Activity</a></li>
+                                <li><a href="e-portfolio-template.html">E-Portfolio Template</a></li>
+                                <li><a href="educational-video.html">Educational Video</a></li>
+                                <li><a href="digital-animation.html">Digital Animation</a></li>
+                                <li><a href="screencast.html">Screencast</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <button id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                        <span aria-hidden="true">☾</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main id="main-content" class="project-page block-template-page" tabindex="-1">
+            <nav class="project-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <a href="../academic-projects.html">Academic Projects</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">POUR Drag-and-Drop Activity</span>
+            </nav>
+
+            <header class="block-template-intro">
+                <p class="project-category">Academic Project · Interactive Learning</p>
+                <h1>POUR Drag-and-Drop Activity</h1>
+                <p>This assignment explored two approaches to creating an interactive, web-based drag-and-drop assessment: modifying an existing code template and using generative AI to build the activity. The goal was to create a standalone practice exercise in which learners drag concepts into relevant categories and receive immediate visual feedback when an answer is correct or incorrect.</p>
+            </header>
+
+            <div class="block-template-sections">
+                
+
+                <section class="content-block basic-block" aria-labelledby="comparison-title">
+                    <h2 class="has-title-underline" id="comparison-title">Original Project</h2>
+                    <p>This project was a comparison of traditional and AI-assisted development approaches for an interactive drag-and-drop activity.</p>
+                    <p>For my version of the assignment, I focused on the four WCAG accessibility principles: Perceivable, Operable, Understandable, and Robust (POUR). Both versions use twelve website accessibility concepts that learners sort into the four categories.</p>
+                    <h3 class="has-title-underline" id="traditional-title">Traditional Version</h3>
+                    <figure class="image-block-media">
+                        <img src="../images/original-drag-n-drop.png"
+                             alt="Screenshot of the traditionally developed POUR drag-and-drop activity, showing accessibility concepts and four sorting categories."
+                             loading="lazy" />
+                        <!-- <figcaption>Traditional version · Customized HTML, CSS, and JavaScript template</figcaption> -->
+                    </figure>
+                    <p>I downloaded and extracted the source-code template, then opened the folder in VS Code. I changed the HTML to include my own title, introduction, category headings, and draggable list items based on the POUR principles. I also added descriptions of the principles for users who might be unfamiliar with them and expanded the original activity to include a fourth category.</p>
+                    <p>Next, I customized the CSS. I changed the background, colors, typography, and logo placement, then resized the drag-and-drop container and adjusted margins and padding to improve the alignment. Because my list items contained longer descriptions than the original examples, I also had to change the text boxes to accommodate their content. I tested and adjusted the layout throughout the process before uploading the files to GitHub and publishing the activity with GitHub Pages.</p>
+                    <p><a class="content-button" href="https://cole-gomez-design.github.io/drag-and-drop-quiz/" target="_blank" rel="noopener noreferrer">View Traditional Activity</a></p>
+
+                    <hr class="content-divider">
+
+                    <h3 class="has-title-underline" id="ai-title">AI-Generated Version</h3>
+                    <figure class="image-block-media">
+                        <img src="../images/ai-drag-n-drop.png"
+                             alt="Screenshot of the AI-generated POUR drag-and-drop activity, showing its accessibility concepts and four sorting categories."
+                             loading="lazy" />
+                        <!-- <figcaption>AI-generated version · Created with an AI assistant</figcaption> -->
+                    </figure>
+                    <p>For the AI version, I used an AI assistant to generate the HTML, CSS, and JavaScript. The process was much faster and required less coding knowledge. I did not edit the code directly; I copied the generated code from the chat and pasted it into my file structure in VS Code, then tested the activity and used the AI assistant to troubleshoot issues.</p>
+                    <p>Although the AI-generated activity contained the same information, I found the visual design significantly more overwhelming. It was very busy and included too many extraneous visual elements that distracted from the activity itself. The colors did not create a clear visual path or guide the user's attention through the page. The overall style also felt similar to the AI-generated presentations I frequently see in my office. The traditionally developed version had a clearer separation between the instructions and the activity, making it easier to understand visually.</p>
+                    <p>AI also generated accessibility improvements in response to a single prompt, which appeared to bring the page closer to WCAG AA standards. I did not run the result through an accessibility checker, however, so I cannot confirm that it meets those standards.</p>
+                    <p><a class="content-button" href="https://cole-gomez-design.github.io/ai-drag-and-drop-quiz/" target="_blank" rel="noopener noreferrer">View AI-Generated Activity</a></p>
+
+                    <hr class="content-divider">
+
+                    <h3 class="has-title-underline" id="reflection-title">Reflection</h3>
+                    <p>The biggest difference between the two approaches was how much interaction I personally had with the code. With traditional methods, I edited the code piece by piece, changing specific lines as I went. With generative AI, the process was much faster, but I did not work directly with the code. The underlying files and structures were similar, though the specific contents, especially in the CSS, differed.</p>
+                    <p>My overall experience with traditional development was more engaging and educational. I learned more by testing visual changes and adjusting margins, padding, and element sizes myself. With AI, I did not learn new coding skills; I mostly copied and pasted code and uploaded it to GitHub. I preferred the traditional approach both because it was more educational and because I liked the result better.</p>
+                    <p>I think the best solution would be to develop the activity using traditional methods and then use AI to help improve its accessibility. This keeps the designer's judgment and understanding of the objective at the forefront while still benefiting from AI's ability to generate or edit large sections of code quickly.</p>
+                </section>
+
+                <section class="content-block image-block" aria-labelledby="redesign-title">
+                    <figure class="image-block-media">
+                        <img src="../images/pour-screenshot.png"
+                             alt="Screenshot of the redesigned POUR drag-and-drop activity, showing the updated interface and four accessibility sorting categories."
+                             loading="lazy" />
+                        <!-- <figcaption>Portfolio redesign · Refined interface and visual presentation</figcaption> -->
+                    </figure>
+                    <div class="image-block-copy">
+                        <h2 class="has-title-underline" id="redesign-title">Redesigned Version</h2>
+                        <p>For my portfolio, I revisited the traditionally developed activity and refined its visual design. I updated the layout, typography, colors, and logo placement to create a more cohesive presentation while retaining the original purpose and drag-and-drop functionality.</p>
+                        <p>The redesign builds on the clearer structure of the traditional version, keeping the instructions and activity easy to distinguish while reducing visual distractions. It also incorporates accessibility features from the AI-generated version that were missing from the original template. From a user experience perspective, the redesign combines the strengths of both approaches: the visual clarity of the traditional version and the accessibility features of the AI version.</p>
+                        <p><a class="content-button" href="REDESIGNED_VERSION_URL" target="_blank" rel="noopener noreferrer">View Redesigned Activity</a></p>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="project-navigation" aria-label="Project navigation">
+                <a href="../academic-projects.html">Back to Academic Projects</a>
+            </nav>
+        </main>
+
+    </div>
+
+    <footer id="footer">
+        <p>&copy; 2026 Cole Gomez. All rights reserved.</p>
+        <a href="https://education.ufl.edu/educational-technology/" target="_blank" rel="noopener noreferrer">University of Florida Educational Technology Program</a>
+        <span aria-hidden="true"> | </span>
+        <a href="#main-content">Back to top</a>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

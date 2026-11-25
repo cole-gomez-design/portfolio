@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Reusable content block examples for the Crafting Visuals portfolio project page." />
+    <title>Crafting Visuals | Cole Gomez</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" type="text/css" />
+    <link href="../style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div id="wrapper">
+        <nav id="menu-wrapper" aria-label="Main navigation">
+            <div id="menu" class="container">
+                <div id="site-brand">
+                    <a href="../index.html">Cole Gomez</a>
+                </div>
+
+                <div id="nav-controls">
+                    <ul id="primary-navigation">
+                        <li>
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+                            <div class="nav-link-group">
+                                <a class="nav-link" href="../professional-work.html">Professional Work</a>
+                                <button class="dropdown-toggle" type="button"
+                                    aria-label="Show Professional Work project links"
+                                    data-menu-label="Professional Work project links"
+                                    aria-expanded="false" aria-controls="professional-work-menu">
+                                    <span class="dropdown-chevron" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <ul class="dropdown-menu" id="professional-work-menu" hidden="hidden">
+                                <li><a href="qpsi-website.html">QPSi Website</a></li>
+                                <li><a href="qpsi-knowledgebase.html">QPSi Knowledgebase</a></li>
+                                <li><a href="uf-office-of-real-estate.html">UF Office of Real Estate</a></li>
+                                <li><a href="conneqtor-qms.html">ConneQtor QMS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item has-dropdown">
+                            <div class="nav-link-group">
+                                <a class="nav-link" href="../academic-projects.html">Academic Projects</a>
+                                <button class="dropdown-toggle" type="button"
+                                    aria-label="Show Academic Projects project links"
+                                    data-menu-label="Academic Projects project links"
+                                    aria-expanded="false" aria-controls="academic-projects-menu">
+                                    <span class="dropdown-chevron" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <ul class="dropdown-menu" id="academic-projects-menu" hidden="hidden">
+                                <li><a href="crafting-visuals.html" aria-current="page">Crafting Visuals</a></li>
+                                <li><a href="website-accessibility-quiz.html">Website Accessibility Quiz</a></li>
+                                <li><a href="pour-drag-and-drop.html">POUR Drag-and-Drop Activity</a></li>
+                                <li><a href="e-portfolio-template.html">E-Portfolio Template</a></li>
+                                <li><a href="educational-video.html">Educational Video</a></li>
+                                <li><a href="digital-animation.html">Digital Animation</a></li>
+                                <li><a href="projects/screencast.html">Screencast</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <button id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                        <span aria-hidden="true">☾</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main id="main-content" class="project-page block-template-page" tabindex="-1">
+            <nav class="project-breadcrumbs" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <span aria-hidden="true">/</span>
+                <a href="../academic-projects.html">Academic Projects</a>
+                <span aria-hidden="true">/</span>
+                <span aria-current="page">Crafting Visuals</span>
+            </nav>
+
+            <header class="block-template-intro">
+                <p class="project-category">Academic Project · Visual Design</p>
+                <h1>Crafting Visuals</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante, sed efficitur libero facilisis vitae.</p>
+            </header>
+
+            <div class="block-template-sections">
+                <!-- BASIC BLOCK: white panel, underlined heading, and paragraph. -->
+                <section class="content-block basic-block" aria-labelledby="basic-block-title">
+                    <h2 class="has-title-underline" id="basic-block-title">Basic Block</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod, sem at posuere facilisis, justo lectus posuere neque, vitae blandit mi nibh at erat.</p>
+                </section>
+
+                <!-- BUTTON BLOCK: copy the anchor and change its text and destination. -->
+                <section class="content-block button-block" aria-labelledby="button-block-title">
+                    <h2 class="has-title-underline" id="button-block-title">Button</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Use a button for a primary action, such as viewing a project or downloading a file.</p>
+                    <a class="content-button" href="../files/Project%201%20-%20Crafting%20Visuals.pdf">Example Button</a>
+                </section>
+
+                <!-- HYPERLINK BLOCK: inline text link with a consistent underline and hover state. -->
+                <section class="content-block hyperlink-block" aria-labelledby="hyperlink-block-title">
+                    <h2 class="has-title-underline" id="hyperlink-block-title">Hyperlink</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Learn more on the <a class="content-link" href="../academic-projects.html">Academic Projects page</a>.</p>
+                </section>
+
+                <!-- IMAGE BLOCK: full-width image followed by a title and paragraph. -->
+                <section class="content-block image-block" aria-labelledby="image-block-title">
+                    <figure class="image-block-media">
+                        <img src="../images/website-accessibility-quiz-original.png"
+                             alt="Screenshot of the original Website Accessibility Pop Quiz, showing its Multimedia Design logo, blue background, question prompt, and answer controls."
+                             loading="lazy" />
+                        <figcaption>Example image: original Website Accessibility Quiz.</figcaption>
+                    </figure>
+                    <div class="image-block-copy">
+                        <h2 class="has-title-underline" id="image-block-title">Image Block</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Use this layout when an image is the main visual and the supporting text belongs directly beneath it.</p>
+                    </div>
+                </section>
+
+                <!-- FLIPFLOP-LEFT: image takes two-thirds; text takes one-third. -->
+                <section class="content-block flipflop-left" aria-labelledby="flipflop-left-title">
+                    <figure class="flipflop-left-media">
+                        <img src="../images/multimedia-design-logo.png"
+                             alt="Multimedia Design logo featuring an open book with blue pages and an orange feather."
+                             loading="lazy" />
+                        <figcaption>Example image: Multimedia Design logo.</figcaption>
+                    </figure>
+                    <div class="flipflop-left-copy">
+                        <h2 class="has-title-underline" id="flipflop-left-title">Flipflop-Left</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. This layout pairs a larger image on the left with a shorter text area on the right.</p>
+                    </div>
+                </section>
+
+                <!-- QUOTE / CALLOUT: useful for a key takeaway, reflection, or short quotation. -->
+                <aside class="content-block quote-block" aria-labelledby="quote-block-title">
+                    <h2 class="has-title-underline" id="quote-block-title">Quote / Callout</h2>
+                    <blockquote>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. A short statement can give an important idea room to stand out.”</p>
+                    </blockquote>
+                    <p class="quote-attribution">Optional attribution or source</p>
+                </aside>
+
+                <!-- VIDEO / EMBED: replace the placeholder with a responsive iframe when needed. -->
+                <section class="content-block embed-block" aria-labelledby="embed-block-title">
+                    <h2 class="has-title-underline" id="embed-block-title">Video / Embed Block</h2>
+                    <div class="embed-placeholder" role="img" aria-label="Placeholder showing where a video or interactive embed can be placed">
+                        <span>Video or interactive embed</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Use this block for a video, animation, or interactive project demo.</p>
+                    <!-- Replace .embed-placeholder with an iframe and give the iframe a descriptive title. -->
+                </section>
+
+                <!-- CONTENT GRID: compact image cards for related examples, versions, or resources. -->
+                <section class="content-grid-section" aria-labelledby="content-grid-title">
+                    <h2 class="has-title-underline" id="content-grid-title">Content Grid</h2>
+                    <div class="content-grid">
+                        <article class="content-grid-card">
+                            <img src="../images/website-accessibility-quiz-original.png"
+                                 alt="Original Website Accessibility Quiz screenshot."
+                                 loading="lazy" />
+                            <div class="content-grid-card-copy">
+                                <h3>Example Card One</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="content-link" href="website-accessibility-quiz.html">View example</a>
+                            </div>
+                        </article>
+
+                        <article class="content-grid-card">
+                            <img class="logo-image" src="../images/multimedia-design-logo.png"
+                                 alt="Multimedia Design open-book and feather logo."
+                                 loading="lazy" />
+                            <div class="content-grid-card-copy">
+                                <h3>Example Card Two</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="content-link" href="../academic-projects.html">View example</a>
+                            </div>
+                        </article>
+
+                        <article class="content-grid-card">
+                            <img src="../images/multimedia-principles-reference.png"
+                                 alt="Reference image listing multimedia learning principles, including modality, contiguity, multimedia, and coherence."
+                                 loading="lazy" />
+                            <div class="content-grid-card-copy">
+                                <h3>Example Card Three</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <a class="content-link" href="../academic-projects.html">View example</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="project-navigation" aria-label="Project navigation">
+                <a href="../academic-projects.html">Back to Academic Projects</a>
+            </nav>
+        </main>
+
+        <div id="contact" class="container">
+            <h2>Contact</h2>
+            <p>Have a question or want to get in touch? Send me an email.</p>
+            <a href="mailto:cole.gomez@outlook.com" class="button">Email Me</a>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <!-- START FOOTER -->
+        <p>&copy; 2026 Cole Gomez. All rights reserved.</p>
+        <a href="#main-content">Back to top</a>
+        <!-- END FOOTER -->
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
